@@ -631,7 +631,7 @@ setInterval(function(){
         index = 0;
     }
 
-    document.getElementById("slideImage").src = images[index];
+    document.getElementById("slideImage").src =images[index];
 
 }, 3000);
 </script>
