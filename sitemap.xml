@@ -1,25 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-<url>
-<loc>https://YOUR-WEBSITE-LINK.github.io/</loc>
-</url>
-
-<url>
-<loc>https://YOUR-WEBSITE-LINK.github.io/about.html</loc>
-</url>
-
-<url>
-<loc>https://YOUR-WEBSITE-LINK.github.io/contact.html</loc>
-</url>
-
-<url>
-<loc>https://YOUR-WEBSITE-LINK.github.io/privacy.html</loc>
-</url>
-
-<url>
-<loc>https://YOUR-WEBSITE-LINK.github.io/disclaimer.html</loc>
-</url>
-
+  <url>
+       <loc>https://techwith.github.io/TechWithAmit/index.html</loc>
+       <lastmod>2026-07-17T10:27:59+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://techwith.github.io/TechWithAmit/about.html</loc>
+       <lastmod>2026-07-17T10:27:59+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://techwith.github.io/TechWithAmit/contact.html</loc>
+       <lastmod>2026-07-17T10:27:59+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://techwith.github.io/TechWithAmit/ai.html</loc>
+       <lastmod>2026-07-17T10:27:59+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://techwith.github.io/TechWithAmit/android.html</loc>
+       <lastmod>2026-07-17T10:27:59+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://techwith.github.io/TechWithAmit/coding.html</loc>
+       <lastmod>2026-07-17T10:27:59+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://techwith.github.io/TechWithAmit/chatgpt-guide.html</loc>
+       <lastmod>2026-07-17T10:27:59+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://techwith.github.io/TechWithAmit/html-guide.html</loc>
+       <lastmod>2026-07-17T10:27:59+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://techwith.github.io/TechWithAmit/android17.html</loc>
+       <lastmod>2026-07-17T10:27:59+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://techwith.github.io/TechWithAmit/ai-tools.html</loc>
+       <lastmod>2026-07-17T10:27:59+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://techwith.github.io/TechWithAmit/google-gemini.html</loc>
+       <lastmod>2026-07-17T10:27:59+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://techwith.github.io/TechWithAmit/ai-education.html</loc>
+       <lastmod>2026-07-17T10:27:59+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://techwith.github.io/TechWithAmit/future-ai.html</loc>
+       <lastmod>2026-07-17T10:27:59+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://techwith.github.io/TechWithAmit/css-guide.html</loc>
+       <lastmod>2026-07-17T10:27:59+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://techwith.github.io/TechWithAmit/javascript-guide.html</loc>
+       <lastmod>2026-07-17T10:27:59+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://techwith.github.io/TechWithAmit/python-guide.html</loc>
+       <lastmod>2026-07-17T10:27:59+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://techwith.github.io/TechWithAmit/web-development.html</loc>
+       <lastmod>2026-07-17T10:27:59+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://techwith.github.io/TechWithAmit/best-android-apps.html</loc>
+       <lastmod>2026-07-17T10:27:59+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://techwith.github.io/TechWithAmit/android-tips.html</loc>
+       <lastmod>2026-07-17T10:27:59+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://techwith.github.io/TechWithAmit/mobile-security.html</loc>
+       <lastmod>2026-07-17T10:27:59+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://techwith.github.io/TechWithAmit/cyber-security.html</loc>
+       <lastmod>2026-07-17T10:27:59+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://techwith.github.io/TechWithAmit/future-robotics.html</loc>
+       <lastmod>2026-07-17T10:27:59+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://techwith.github.io/TechWithAmit/latest-gadgets.html</loc>
+       <lastmod>2026-07-17T10:27:59+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://techwith.github.io/TechWithAmit/cloud-computing.html</loc>
+       <lastmod>2026-07-17T10:27:59+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://techwith.github.io/TechWithAmit/iot.html</loc>
+       <lastmod>2026-07-17T10:27:59+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://techwith.github.io/TechWithAmit/privacy.html</loc>
+       <lastmod>2026-07-17T10:27:59+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://techwith.github.io/TechWithAmit/disclaimer.html</loc>
+       <lastmod>2026-07-17T10:27:59+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
 </urlset>
