@@ -1,51 +1,316 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Python Programming Guide | TechWithAmit</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Python Tutorial for Beginners | TechWithAmit</title>
+  <meta name="description" content="Learn Python programming from basics with simple examples. Understand variables, data types, conditions, loops, functions and lists.">
+
+  <link rel="canonical" href="https://techwith.github.io/TechWithAmit/python-guide.html">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.8;
+      background: #f4f7fb;
+      color: #222;
+    }
+
+    header {
+      background: #172554;
+      color: white;
+      text-align: center;
+      padding: 22px 15px;
+    }
+
+    nav {
+      background: #1e3a8a;
+      padding: 12px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
+    main {
+      max-width: 850px;
+      margin: 24px auto;
+      padding: 24px;
+      background: white;
+      border-radius: 12px;
+    }
+
+    h2 {
+      color: #1d4ed8;
+      margin-top: 28px;
+    }
+
+    pre {
+      background: #111827;
+      color: #d1fae5;
+      padding: 16px;
+      border-radius: 8px;
+      overflow-x: auto;
+      white-space: pre-wrap;
+    }
+
+    .note {
+      background: #eff6ff;
+      border-left: 4px solid #2563eb;
+      padding: 14px;
+    }
+
+    footer {
+      background: #172554;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer a {
+      color: white;
+    }
+
+    body.dark {
+      background: #111827;
+      color: #e5e7eb;
+    }
+
+    body.dark main {
+      background: #1f2937;
+    }
+
+    body.dark h2 {
+      color: #93c5fd;
+    }
+
+    body.dark .note {
+      background: #26364d;
+    }
+
+    button {
+      background: #2563eb;
+      color: white;
+      border: 0;
+      border-radius: 6px;
+      padding: 10px 14px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        margin: 12px;
+        padding: 16px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px;
+      }
+    }
+  </style>
 </head>
 
 <body>
+  <header>
+    <h1>TechWithAmit</h1>
+    <p>Making Technology Easier for Everyone</p>
+  </header>
 
-<header>
-<h1>TechWithAmit</h1>
-</header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="html-guide.html">HTML</a>
+    <a href="css-guide.html">CSS</a>
+    <a href="javascript-guide.html">JavaScript</a>
+    <a href="about.html">About</a>
+  </nav>
 
-<section class="hero">
+  <main>
+    <article>
+      <h1>Python Tutorial for Beginners: Learn Python from Zero</h1>
 
-<h2>🐍 Python Programming Guide</h2>
+      <p>
+        Python ek popular programming language hai. Iska syntax
+        beginner-friendly hai aur iska use web development,
+        automation, data analysis, AI aur machine learning mein hota hai.
+      </p>
 
-<img src="images/coding.png" width="300">
+      <h2>1. Python Kya Hai?</h2>
+      <p>
+        Python ek high-level programming language hai jise simple
+        aur readable code likhne ke liye design kiya gaya hai.
+        Beginners ise programming seekhne ke liye use kar sakte hain.
+      </p>
 
-<p><strong>Author:</strong> Amit</p>
+      <h2>2. Python Ka First Program</h2>
+      <p>Python mein text display karne ke liye print() use hota hai.</p>
 
-<p>
-Python is one of the most popular programming languages because it is simple and beginner friendly.
-</p>
+      <pre><code>print("Hello World!")
+print("Welcome to Python")</code></pre>
 
-<p>
-Python is used in Artificial Intelligence, Machine Learning, Web Development, Automation and Data Science.
-</p>
+      <h2>3. Variables</h2>
+      <p>
+        Variable ek naam hota hai jisme hum data store kar sakte hain.
+      </p>
 
-<p>
-Students can start coding with Python easily and build useful projects.
-</p>
+      <pre><code>name = "Amit"
+age = 18
+course = "B.Tech CSE"
 
-<h3>Basic Python Example:</h3>
+print(name)
+print(age)
+print(course)</code></pre>
 
-<pre>
-print("Hello TechWithAmit")
-</pre>
+      <h2>4. Python Data Types</h2>
+      <ul>
+        <li>String: text, jaise "Hello"</li>
+        <li>Integer: whole numbers, jaise 25</li>
+        <li>Float: decimal numbers, jaise 7.5</li>
+        <li>Boolean: True ya False</li>
+        <li>List: multiple values ki collection</li>
+      </ul>
 
-<br>
+      <pre><code>name = "Amit"
+marks = 70
+percentage = 70.5
+is_student = True
 
-<a href="index.html">
-<button>⬅ Back to Home</button>
-</a>
+print(type(name))
+print(type(marks))
+print(type(percentage))
+print(type(is_student))</code></pre>
 
-</section>
+      <h2>5. User Se Input Lena</h2>
+      <p>input() function user se information leta hai.</p>
 
+      <pre><code>name = input("Enter your name: ")
+print("Hello", name)</code></pre>
+
+      <h2>6. Conditions: if and else</h2>
+      <p>
+        Conditions ki help se program decision le sakta hai.
+      </p>
+
+      <pre><code>marks = 70
+
+if marks >= 40:
+    print("Pass")
+else:
+    print("Try again")</code></pre>
+
+      <p>
+        Python mein indentation yani line ke starting spaces important hote hain.
+      </p>
+
+      <h2>7. Loops</h2>
+      <p>
+        Loop kisi instruction ko baar-baar run karne mein help karta hai.
+      </p>
+
+      <pre><code>for i in range(1, 6):
+    print(i)</code></pre>
+
+      <h2>8. Lists</h2>
+      <p>
+        List mein multiple values ek saath store ki ja sakti hain.
+      </p>
+
+      <pre><code>subjects = ["Maths", "Physics", "Chemistry"]
+
+print(subjects[0])
+print(subjects[1])
+
+subjects.append("Programming")
+print(subjects)</code></pre>
+
+      <h2>9. Functions</h2>
+      <p>
+        Function reusable code ka block hota hai.
+      </p>
+
+      <pre><code>def greet(name):
+    print("Hello", name)
+
+greet("Amit")
+greet("Student")</code></pre>
+
+      <h2>10. Python Kahan Use Hoti Hai?</h2>
+      <ul>
+        <li>Artificial Intelligence aur Machine Learning</li>
+        <li>Data analysis</li>
+        <li>Automation scripts</li>
+        <li>Web development</li>
+        <li>Education aur scientific computing</li>
+      </ul>
+
+      <h2>11. Python Kaise Practice Karein?</h2>
+      <ol>
+        <li>Variables aur data types samjhein.</li>
+        <li>Input, conditions aur loops practice karein.</li>
+        <li>Lists aur functions seekhein.</li>
+        <li>Simple calculator banayein.</li>
+        <li>Chhote projects bana kar practice karein.</li>
+      </ol>
+
+      <div class="note">
+        <strong>Beginner Tip:</strong>
+        Code ko khud type karke run karein. Error aaye toh use
+        samajhne ki koshish karein; debugging bhi programming ka
+        important part hai.
+      </div>
+
+      <h2>Free Learning Resources</h2>
+      <ul>
+        <li>
+          <a href="https://docs.python.org/3/tutorial/"
+             target="_blank" rel="noopener noreferrer">
+            Official Python Tutorial
+          </a>
+        </li>
+        <li>
+          <a href="https://www.w3schools.com/python/"
+             target="_blank" rel="noopener noreferrer">
+            W3Schools Python Tutorial
+          </a>
+        </li>
+      </ul>
+
+      <h2>Related Articles</h2>
+      <ul>
+        <li><a href="html-guide.html">HTML Beginner Guide</a></li>
+        <li><a href="css-guide.html">CSS Beginner Guide</a></li>
+        <li><a href="javascript-guide.html">JavaScript Beginner Guide</a></li>
+        <li><a href="ai-tools.html">AI Tools Guide</a></li>
+      </ul>
+
+      <p><a href="index.html">← Back to TechWithAmit Home</a></p>
+    </article>
+  </main>
+
+  <footer>
+    <p>© 2026 TechWithAmit. All rights reserved.</p>
+    <p>
+      <a href="privacy.html">Privacy Policy</a> |
+      <a href="disclaimer.html">Disclaimer</a> |
+      <a href="contact.html">Contact</a>
+    </p>
+    <button onclick="darkMode()">Toggle Dark Mode</button>
+  </footer>
+
+  <script>
+    function darkMode() {
+      document.body.classList.toggle("dark");
+    }
+  </script>
 </body>
 </html>
