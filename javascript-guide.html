@@ -1,64 +1,314 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>JavaScript Complete Guide | TechWithAmit</title>
+  <title>JavaScript Tutorial for Beginners | TechWithAmit</title>
+  <meta name="description" content="Learn JavaScript from basics with simple examples. Understand variables, data types, functions, conditions, loops and DOM for beginners.">
 
-<link rel="stylesheet" href="style.css">
+  <link rel="canonical" href="https://techwith.github.io/TechWithAmit/javascript-guide.html">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.8;
+      background: #f3f6fb;
+      color: #222;
+    }
+
+    header {
+      background: #172554;
+      color: white;
+      text-align: center;
+      padding: 22px 15px;
+    }
+
+    nav {
+      background: #1e3a8a;
+      padding: 12px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
+    main {
+      max-width: 850px;
+      margin: 24px auto;
+      padding: 24px;
+      background: white;
+      border-radius: 12px;
+    }
+
+    h2 {
+      color: #1d4ed8;
+      margin-top: 28px;
+    }
+
+    pre {
+      background: #111827;
+      color: #d1fae5;
+      padding: 16px;
+      border-radius: 8px;
+      overflow-x: auto;
+      white-space: pre-wrap;
+    }
+
+    .note {
+      background: #eff6ff;
+      padding: 14px;
+      border-left: 4px solid #2563eb;
+    }
+
+    button {
+      padding: 10px 14px;
+      border: 0;
+      border-radius: 6px;
+      cursor: pointer;
+      background: #2563eb;
+      color: white;
+      margin: 5px 0;
+    }
+
+    footer {
+      background: #172554;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer a {
+      color: white;
+    }
+
+    body.dark {
+      background: #111827;
+      color: #e5e7eb;
+    }
+
+    body.dark main {
+      background: #1f2937;
+    }
+
+    body.dark h2 {
+      color: #93c5fd;
+    }
+
+    body.dark .note {
+      background: #26364d;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        margin: 12px;
+        padding: 16px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px;
+      }
+    }
+  </style>
 </head>
 
 <body>
+  <header>
+    <h1>TechWithAmit</h1>
+    <p>Making Technology Easier for Everyone</p>
+  </header>
 
-<header>
-<div class="container">
-<h1>TechWithAmit</h1>
-</div>
-</header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="ai-tools.html">AI Tools</a>
+    <a href="html-guide.html">HTML Guide</a>
+    <a href="css-guide.html">CSS Guide</a>
+    <a href="about.html">About</a>
+  </nav>
 
+  <main>
+    <article>
+      <h1>JavaScript Tutorial for Beginners</h1>
 
-<section class="hero">
+      <p>
+        JavaScript ek popular programming language hai jo websites
+        ko interactive banati hai. Iski help se buttons, forms,
+        menus, calculators aur bahut saare useful features banaye
+        ja sakte hain.
+      </p>
 
-<h2>⚡ JavaScript Complete Guide for Beginners</h2>
+      <h2>1. JavaScript Kya Hai?</h2>
+      <p>
+        HTML webpage ka structure banata hai, CSS uska design karta
+        hai aur JavaScript webpage mein functionality add karta hai.
+      </p>
 
-<img src="images/coding.png" alt="JavaScript Coding" width="300">
+      <h2>2. JavaScript Kaise Likhein?</h2>
+      <p>
+        JavaScript ko HTML ke script tag mein ya alag .js file mein
+        likh sakte hain.
+      </p>
 
-<p><strong>Published:</strong> 14 July 2026</p>
-<p><strong>Author:</strong> Amit</p>
+      <pre><code>&lt;script&gt;
+  alert("Hello World!");
+&lt;/script&gt;</code></pre>
 
+      <h2>3. Variables</h2>
+      <p>
+        Variables data store karne ke liye use hote hain.
+        JavaScript mein let aur const commonly use kiye jaate hain.
+      </p>
 
-<p>
-JavaScript is a programming language used to make websites interactive and dynamic. It adds functionality to web pages.
-</p>
+      <pre><code>let name = "Amit";
+let age = 18;
+const language = "JavaScript";
 
-<p>
-With JavaScript, developers can create buttons, animations, search systems, dark mode, games and many other web features.
-</p>
+console.log(name);
+console.log(age);
+console.log(language);</code></pre>
 
-<p>
-After learning HTML and CSS, JavaScript is the next important step for becoming a frontend web developer.
-</p>
+      <h2>4. Data Types</h2>
+      <ul>
+        <li>String: text, jaise "Hello"</li>
+        <li>Number: numbers, jaise 25</li>
+        <li>Boolean: true ya false</li>
+        <li>Array: values ki list</li>
+        <li>Object: related information ka collection</li>
+      </ul>
 
+      <pre><code>let city = "Chhindwara";
+let marks = 70;
+let isStudent = true;
 
-<h3>Basic JavaScript Example:</h3>
+let subjects = ["Maths", "Physics", "Chemistry"];
 
-<pre>
-function welcome(){
-    alert("Welcome to TechWithAmit");
+console.log(city);
+console.log(subjects[0]);</code></pre>
+
+      <h2>5. Conditions</h2>
+      <p>
+        if aur else ka use condition ke according decision lene ke
+        liye hota hai.
+      </p>
+
+      <pre><code>let marks = 70;
+
+if (marks >= 40) {
+  console.log("Pass");
+} else {
+  console.log("Try again");
+}</code></pre>
+
+      <h2>6. Loops</h2>
+      <p>
+        Loops kisi task ko multiple times repeat karne mein help
+        karte hain.
+      </p>
+
+      <pre><code>for (let i = 1; i <= 5; i++) {
+  console.log(i);
+}</code></pre>
+
+      <h2>7. Functions</h2>
+      <p>
+        Function reusable code ka block hota hai. Use zarurat
+        padne par call kar sakte hain.
+      </p>
+
+      <pre><code>function greet(name) {
+  return "Hello " + name;
 }
-</pre>
 
+console.log(greet("Amit"));</code></pre>
 
-<br>
+      <h2>8. Button Ko Interactive Banayein</h2>
+      <p>Is button ko click karke dekhein:</p>
 
-<a href="index.html">
-<button>⬅ Back to Home</button>
-</a>
+      <button onclick="showMessage()">Click Here</button>
+      <p id="message">Message yahan show hoga.</p>
 
-</section>
+      <h2>9. DOM Kya Hai?</h2>
+      <p>
+        DOM ka full form Document Object Model hai. JavaScript DOM
+        ke through webpage ke HTML elements ko access aur change
+        kar sakti hai.
+      </p>
 
+      <pre><code>document.getElementById("message").textContent =
+  "JavaScript is working!";</code></pre>
 
+      <h2>10. JavaScript Kaise Seekhein?</h2>
+      <ol>
+        <li>Variables aur data types practice karein.</li>
+        <li>Conditions aur loops samjhein.</li>
+        <li>Functions banana seekhein.</li>
+        <li>DOM aur events par practice karein.</li>
+        <li>Ek simple calculator ya quiz app banayein.</li>
+      </ol>
+
+      <div class="note">
+        <strong>Beginner Tip:</strong>
+        Code ko sirf copy-paste mat karein. Har example mein
+        values change karke dekhein ki output kaise badalta hai.
+      </div>
+
+      <h2>Free Learning Resources</h2>
+      <ul>
+        <li>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+             target="_blank" rel="noopener noreferrer">
+            MDN JavaScript Guide
+          </a>
+        </li>
+        <li>
+          <a href="https://javascript.info/"
+             target="_blank" rel="noopener noreferrer">
+            The Modern JavaScript Tutorial
+          </a>
+        </li>
+      </ul>
+
+      <h2>Related Articles</h2>
+      <ul>
+        <li><a href="html-guide.html">HTML Tutorial</a></li>
+        <li><a href="css-guide.html">CSS Tutorial</a></li>
+        <li><a href="ai-tools.html">AI Tools Guide</a></li>
+        <li><a href="chatgpt-guide.html">ChatGPT Complete Guide</a></li>
+      </ul>
+
+      <p><a href="index.html">← Back to Home</a></p>
+    </article>
+  </main>
+
+  <footer>
+    <p>© 2026 TechWithAmit. All rights reserved.</p>
+    <p>
+      <a href="privacy.html">Privacy Policy</a> |
+      <a href="disclaimer.html">Disclaimer</a> |
+      <a href="contact.html">Contact</a>
+    </p>
+    <button onclick="darkMode()">Toggle Dark Mode</button>
+  </footer>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").textContent =
+        "JavaScript is working!";
+    }
+
+    function darkMode() {
+      document.body.classList.toggle("dark");
+    }
+  </script>
 </body>
 </html>
