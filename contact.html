@@ -1,72 +1,317 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Contact - TechWithAmit</title>
+  <title>Contact Us | TechWithAmit</title>
+  <meta name="description" content="Contact TechWithAmit for website feedback, article corrections, suggestions and collaboration inquiries.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://techwith.github.io/TechWithAmit/contact.html">
 
-<link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.7;
+      background: #f3f6fb;
+      color: #202938;
+      transition: 0.3s;
+    }
+
+    header {
+      background: #101827;
+      color: white;
+      text-align: center;
+      padding: 22px 15px;
+    }
+
+    header h1 {
+      font-size: 28px;
+    }
+
+    nav {
+      margin-top: 12px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
+    .btn {
+      background: #1769aa;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 12px;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 25px auto;
+      padding: 25px;
+      background: white;
+      border-radius: 12px;
+    }
+
+    h2 {
+      color: #1769aa;
+      margin: 20px 0 10px;
+    }
+
+    p {
+      margin: 12px 0;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin: 15px 0 5px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      font-size: 16px;
+      background: white;
+      color: #202938;
+    }
+
+    textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    .submit-btn {
+      width: 100%;
+      background: #1769aa;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 13px;
+      margin-top: 18px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .note {
+      background: #e8f3ff;
+      padding: 15px;
+      border-left: 4px solid #1769aa;
+      border-radius: 5px;
+      margin: 18px 0;
+    }
+
+    footer {
+      background: #101827;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 25px;
+    }
+
+    body.dark {
+      background: #111827;
+      color: #e5e7eb;
+    }
+
+    body.dark main {
+      background: #1f2937;
+    }
+
+    body.dark h2 {
+      color: #7dd3fc;
+    }
+
+    body.dark input,
+    body.dark select,
+    body.dark textarea {
+      background: #111827;
+      color: white;
+      border-color: #475569;
+    }
+
+    body.dark .note {
+      background: #29384b;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 23px;
+      }
+
+      main {
+        margin: 12px;
+        padding: 18px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 4px 6px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
-<div class="container">
+  <h1>TechWithAmit</h1>
+  <p>Making Technology Easier for Everyone</p>
 
-<div class="logo-box">
-<img src="images/logo.png" alt="TechWithAmit Logo" width="120">
-</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="ai.html">AI</a>
+    <a href="coding.html">Coding</a>
+  </nav>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="news.html">News</a>
-<a href="technology.html">Technology</a>
-<a href="contact.html">Contact</a>
-</nav>
-
-</div>
+  <button class="btn" onclick="darkMode()">🌙 Dark Mode</button>
 </header>
 
+<main>
+  <h2>Contact Us</h2>
 
-<section class="contact">
+  <p>
+    Welcome to the TechWithAmit contact page! Have a question, suggestion
+    or correction about an article? You can use the form below to prepare
+    a message.
+  </p>
 
-<h2>Contact Us</h2>
+  <div class="note">
+    <strong>Please note:</strong> This is a static website. The form below
+    opens your email app to send a message; it does not send or store
+    messages directly on this website.
+  </div>
 
-<p>
-Welcome to TechWithAmit.<br>
-Aap apne feedback aur suggestions hume bhej sakte hain.
-</p>
+  <h2>Send Us a Message</h2>
 
-<form>
+  <form id="contactForm">
+    <label for="name">Your Name</label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      placeholder="Enter your name"
+      maxlength="80"
+      required
+    >
 
-<input type="text" placeholder="Your Name">
+    <label for="email">Your Email</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      placeholder="Enter your email address"
+      maxlength="150"
+      required
+    >
 
-<input type="email" placeholder="Your Email">
+    <label for="topic">Message Topic</label>
+    <select id="topic" name="topic" required>
+      <option value="">Choose a topic</option>
+      <option value="Website Feedback">Website feedback</option>
+      <option value="Article Correction">Article correction</option>
+      <option value="Suggestion">Suggestion</option>
+      <option value="Business Inquiry">Business inquiry</option>
+      <option value="Other">Other</option>
+    </select>
 
-<textarea placeholder="Your Message"></textarea>
+    <label for="message">Your Message</label>
+    <textarea
+      id="message"
+      name="message"
+      placeholder="Write your message here..."
+      maxlength="3000"
+      required
+    ></textarea>
 
-<button type="submit">Send Message</button>
+    <button type="submit" class="submit-btn">
+      Prepare Email
+    </button>
+  </form>
 
-</form>
+  <h2>What Can You Contact Us About?</h2>
 
-</section>
+  <ul>
+    <li>Feedback about our articles and guides.</li>
+    <li>Corrections to information that may be inaccurate or outdated.</li>
+    <li>Suggestions for new technology topics.</li>
+    <li>Website issues or collaboration inquiries.</li>
+  </ul>
 
+  <h2>Before Sending a Message</h2>
+
+  <p>
+    Please do not include passwords, banking information or other
+    sensitive personal details in your message.
+  </p>
+
+  <p>
+    You can also explore our <a href="about.html">About Us</a> page
+    to learn more about TechWithAmit.
+  </p>
+</main>
 
 <footer>
-<div class="footer-content">
-
-<h2>TechWithAmit</h2>
-
-<p>
-Latest AI, Android, Coding and Technology updates ke liye connected rahiye.
-</p>
-
-<p>© 2026 TechWithAmit | Made by Amit</p>
-
-</div>
+  <p>© 2026 TechWithAmit | Making Technology Easier for Everyone</p>
 </footer>
 
+<script>
+  function darkMode() {
+    document.body.classList.toggle("dark");
+  }
+
+  document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const topic = document.getElementById("topic").value;
+    const message = document.getElementById("message").value.trim();
+
+    if (!name || !email || !topic || !message) {
+      alert("Please fill in all fields.");
+      return;
+    }
+
+    const subject = encodeURIComponent("TechWithAmit: " + topic);
+    const body = encodeURIComponent(
+      "Name: " + name + "\n" +
+      "Email: " + email + "\n" +
+      "Topic: " + topic + "\n\n" +
+      "Message:\n" + message
+    );
+
+    /*
+      Replace this placeholder with your actual public contact email.
+      Until then, the form will not send to a real recipient.
+    */
+    const recipient = "YOUR_EMAIL@example.com";
+
+    if (recipient === "YOUR_EMAIL@example.com") {
+      alert("Contact form setup is incomplete. Add your contact email in the code first.");
+      return;
+    }
+
+    window.location.href =
+      "mailto:" + recipient +
+      "?subject=" + subject +
+      "&body=" + body;
+  });
+</script>
 
 </body>
 </html>
