@@ -1,63 +1,727 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>HTML Complete Guide | TechWithAmit</title>
+  <title>HTML Tutorial for Beginners: Complete Guide 2026 | TechWithAmit</title>
+  <meta name="description" content="Learn HTML from scratch with simple examples. Understand HTML tags, headings, links, images, lists, tables and forms in this beginner-friendly guide.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="TechWithAmit">
+  <meta name="theme-color" content="#101828">
 
-<link rel="stylesheet" href="style.css">
+  <link rel="canonical" href="https://techwith.github.io/TechWithAmit/html-guide.html">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="HTML Tutorial for Beginners | TechWithAmit">
+  <meta property="og:description" content="Learn HTML step by step with beginner-friendly examples.">
+  <meta property="og:url" content="https://techwith.github.io/TechWithAmit/html-guide.html">
+  <meta property="og:site_name" content="TechWithAmit">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "HTML Tutorial for Beginners: Complete Guide",
+    "description": "A beginner-friendly HTML tutorial covering basic tags and practical examples.",
+    "author": {
+      "@type": "Organization",
+      "name": "TechWithAmit"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "TechWithAmit"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://techwith.github.io/TechWithAmit/html-guide.html"
+    }
+  }
+  </script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.8;
+      background: #f5f7fb;
+      color: #202124;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    header {
+      background: #101828;
+      color: white;
+      text-align: center;
+      padding: 24px 12px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 30px;
+    }
+
+    nav {
+      background: #172554;
+      padding: 12px 8px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      display: inline-block;
+      margin: 4px 8px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .controls {
+      text-align: center;
+      padding: 15px;
+    }
+
+    button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 11px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 18px auto;
+      padding: 25px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 3px 15px #0000000d;
+    }
+
+    h2, h3 {
+      color: #1d4ed8;
+      line-height: 1.4;
+    }
+
+    a {
+      color: #2563eb;
+    }
+
+    .intro {
+      font-size: 18px;
+    }
+
+    .meta {
+      color: #64748b;
+      font-size: 14px;
+    }
+
+    .toc, .tip {
+      background: #eef4ff;
+      padding: 17px;
+      border-radius: 9px;
+      margin: 20px 0;
+    }
+
+    .toc li {
+      margin: 5px 0;
+    }
+
+    pre {
+      background: #111827;
+      color: #e5e7eb;
+      padding: 16px;
+      border-radius: 9px;
+      overflow-x: auto;
+      line-height: 1.6;
+      font-size: 14px;
+      white-space: pre;
+    }
+
+    code {
+      font-family: Consolas, monospace;
+    }
+
+    .example-label {
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
+    .resource {
+      display: inline-block;
+      background: #2563eb;
+      color: white;
+      padding: 9px 14px;
+      border-radius: 7px;
+      text-decoration: none;
+    }
+
+    footer {
+      background: #101828;
+      color: white;
+      text-align: center;
+      padding: 22px 12px;
+      margin-top: 25px;
+    }
+
+    footer a {
+      color: #bfdbfe;
+    }
+
+    body.dark {
+      background: #111827;
+      color: #e5e7eb;
+    }
+
+    body.dark main {
+      background: #1f2937;
+    }
+
+    body.dark h2,
+    body.dark h3 {
+      color: #93c5fd;
+    }
+
+    body.dark a {
+      color: #93c5fd;
+    }
+
+    body.dark .toc,
+    body.dark .tip {
+      background: #273449;
+    }
+
+    body.dark .meta {
+      color: #cbd5e1;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 25px;
+      }
+
+      main {
+        margin: 10px;
+        padding: 16px;
+      }
+
+      .intro {
+        font-size: 16px;
+      }
+
+      pre {
+        font-size: 12px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-<div class="container">
-<h1>TechWithAmit</h1>
-</div>
-</header>
+  <header>
+    <h1>TechWithAmit</h1>
+    <p>Making Technology Easier for Everyone</p>
+  </header>
 
+  <nav aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="index.html#news">News</a>
+    <a href="index.html#technology">Technology</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-<section class="hero">
+  <div class="controls">
+    <button id="themeBtn" type="button" onclick="darkMode()">
+      🌙 Toggle Dark Mode
+    </button>
+  </div>
 
-<h2>💻 HTML Complete Guide for Beginners</h2>
+  <main>
+    <article>
 
-<img src="images/coding.png" alt="HTML Coding" width="300">
+      <h2>HTML Tutorial for Beginners: Complete Guide</h2>
 
-<p><strong>Published:</strong> 14 July 2026</p>
-<p><strong>Author:</strong> Amit</p>
+      <p class="meta">By TechWithAmit | Beginner Tutorial</p>
 
+      <p class="intro">
+        Want to build your first website? HTML is one of the best places
+        to start. This guide explains HTML basics, common tags and useful
+        examples in a simple step-by-step format.
+      </p>
 
-<p>
-HTML (HyperText Markup Language) is the foundation of every website. It is used to create the structure of web pages.
-</p>
+      <p>
+        HTML stands for HyperText Markup Language. It provides the structure
+        of a webpage. CSS controls its appearance, while JavaScript can add
+        interactive behaviour.
+      </p>
 
-<p>
-With HTML, you can create headings, paragraphs, images, links, buttons, forms and complete website layouts.
-</p>
+      <p>
+        If you are exploring AI as well, read our
+        <a href="ai-tools.html">guide to useful AI tools</a> or our
+        <a href="chatgpt-guide.html">ChatGPT beginner guide</a>.
+      </p>
 
-<p>
-Beginners who want to start web development should learn HTML first because it helps them understand how websites work.
-</p>
+      <div class="toc">
+        <h3>Table of Contents</h3>
+        <ol>
+          <li><a href="#what-is-html">What Is HTML?</a></li>
+          <li><a href="#structure">Basic HTML Structure</a></li>
+          <li><a href="#headings">Headings and Paragraphs</a></li>
+          <li><a href="#formatting">Text Formatting</a></li>
+          <li><a href="#links">HTML Links</a></li>
+          <li><a href="#images">Adding Images</a></li>
+          <li><a href="#lists">HTML Lists</a></li>
+          <li><a href="#tables">HTML Tables</a></li>
+          <li><a href="#forms">HTML Forms</a></li>
+          <li><a href="#semantic">Semantic HTML</a></li>
+          <li><a href="#mistakes">Common Beginner Mistakes</a></li>
+          <li><a href="#practice">Practice Project</a></li>
+          <li><a href="#faq">Frequently Asked Questions</a></li>
+        </ol>
+      </div>
 
+      <section id="what-is-html">
+        <h2>1. What Is HTML?</h2>
 
-<h3>Basic HTML Example:</h3>
+        <p>
+          HTML is a markup language used to organise webpage content.
+          It tells the browser which parts are headings, paragraphs,
+          images, links, lists and other elements.
+        </p>
 
-<pre>
-&lt;h1&gt;Hello World&lt;/h1&gt;
-&lt;p&gt;My first website&lt;/p&gt;
-</pre>
+        <p>HTML is commonly used for:</p>
 
+        <ul>
+          <li>Personal websites and blogs</li>
+          <li>Business websites</li>
+          <li>Article and documentation pages</li>
+          <li>Forms and structured webpage content</li>
+          <li>The foundation of web development projects</li>
+        </ul>
 
-<br>
+        <div class="tip">
+          <strong>Remember:</strong> HTML creates structure, CSS styles
+          the page, and JavaScript adds interactive behaviour.
+        </div>
+      </section>
 
-<a href="index.html">
-<button>⬅ Back to Home</button>
-</a>
+      <section id="structure">
+        <h2>2. Basic HTML Structure</h2>
 
-</section>
+        <p>
+          Every normal HTML page starts with a document declaration,
+          followed by the html, head and body elements.
+        </p>
 
+        <p class="example-label">Example:</p>
 
-</body>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport"
+        content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;My First Website&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Hello World!&lt;/h1&gt;
+  &lt;p&gt;This is my first webpage.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+        <h3>What do these tags mean?</h3>
+
+        <ul>
+          <li><code>&lt;!DOCTYPE html&gt;</code> declares an HTML document.</li>
+          <li><code>&lt;html&gt;</code> contains the page content.</li>
+          <li><code>&lt;head&gt;</code> contains metadata and page settings.</li>
+          <li><code>&lt;title&gt;</code> sets the browser tab title.</li>
+          <li><code>&lt;body&gt;</code> contains visible webpage content.</li>
+          <li><code>&lt;meta&gt;</code> provides metadata such as character encoding.</li>
+        </ul>
+      </section>
+
+      <section id="headings">
+        <h2>3. Headings and Paragraphs</h2>
+
+        <p>
+          HTML provides six heading levels, from
+          <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>.
+          Paragraphs use the <code>&lt;p&gt;</code> element.
+        </p>
+
+        <pre><code>&lt;h1&gt;Main Heading&lt;/h1&gt;
+&lt;h2&gt;Section Heading&lt;/h2&gt;
+&lt;h3&gt;Smaller Heading&lt;/h3&gt;
+
+&lt;p&gt;This is a paragraph of text.&lt;/p&gt;</code></pre>
+
+        <p>
+          Use headings in a logical order so readers and search engines
+          can better understand the organisation of your content.
+          Do not choose heading tags only because of their default size.
+        </p>
+      </section>
+
+      <section id="formatting">
+        <h2>4. Text Formatting in HTML</h2>
+
+        <p>
+          HTML includes elements for expressing emphasis and highlighting
+          text. CSS can control the visual style.
+        </p>
+
+        <pre><code>&lt;strong&gt;Important text&lt;/strong&gt;
+
+&lt;em&gt;Emphasised text&lt;/em&gt;
+
+&lt;mark&gt;Highlighted text&lt;/mark&gt;
+
+&lt;small&gt;Smaller text&lt;/small&gt;
+
+&lt;p&gt;Water formula: H&lt;sub&gt;2&lt;/sub&gt;O&lt;/p&gt;
+
+&lt;p&gt;Math example: x&lt;sup&gt;2&lt;/sup&gt;&lt;/p&gt;</code></pre>
+
+        <p>
+          Prefer <code>&lt;strong&gt;</code> for important content
+          and <code>&lt;em&gt;</code> for emphasis when appropriate.
+        </p>
+      </section>
+
+      <section id="links">
+        <h2>5. HTML Links</h2>
+
+        <p>
+          The anchor element <code>&lt;a&gt;</code> creates a clickable link.
+          Its <code>href</code> attribute specifies the destination.
+        </p>
+
+        <pre><code>&lt;a href="https://example.com/"&gt;
+  Visit Example
+&lt;/a&gt;</code></pre>
+
+        <p>To link to another page in the same website:</p>
+
+        <pre><code>&lt;a href="about.html"&gt;
+  About Us
+&lt;/a&gt;</code></pre>
+
+        <p>
+          Use meaningful link text so visitors know where a link will take them.
+          Check that internal links point to pages that actually exist.
+        </p>
+      </section>
+
+      <section id="images">
+        <h2>6. Adding Images in HTML</h2>
+
+        <p>
+          The <code>&lt;img&gt;</code> element displays an image.
+          It uses the <code>src</code> attribute for the image location
+          and the <code>alt</code> attribute for alternative text.
+        </p>
+
+        <pre><code>&lt;img
+  src="images/logo.png"
+  alt="TechWithAmit website logo"
+  width="300"
+&gt;</code></pre>
+
+        <p>
+          Make sure the image path matches the actual filename and folder.
+          Useful alternative text describes the image for people who cannot
+          see it. Decorative images may use an empty alt attribute.
+        </p>
+      </section>
+
+      <section id="lists">
+        <h2>7. HTML Lists</h2>
+
+        <p>
+          Use an unordered list for items where order does not matter,
+          and an ordered list when sequence is important.
+        </p>
+
+        <h3>Unordered list</h3>
+
+        <pre><code>&lt;ul&gt;
+  &lt;li&gt;HTML&lt;/li&gt;
+  &lt;li&gt;CSS&lt;/li&gt;
+  &lt;li&gt;JavaScript&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+        <h3>Ordered list</h3>
+
+        <pre><code>&lt;ol&gt;
+  &lt;li&gt;Create an HTML file&lt;/li&gt;
+  &lt;li&gt;Write your code&lt;/li&gt;
+  &lt;li&gt;Preview the webpage&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+      </section>
+
+      <section id="tables">
+        <h2>8. HTML Tables</h2>
+
+        <p>
+          Tables organise data into rows and columns. Use table headings
+          to make the information easier to understand.
+        </p>
+
+        <pre><code>&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Language&lt;/th&gt;
+      &lt;th&gt;Purpose&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;HTML&lt;/td&gt;
+      &lt;td&gt;Structure&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;CSS&lt;/td&gt;
+      &lt;td&gt;Styling&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+
+        <p>
+          Use tables for tabular information, not to arrange the entire
+          layout of a webpage.
+        </p>
+      </section>
+
+      <section id="forms">
+        <h2>9. HTML Forms</h2>
+
+        <p>
+          Forms collect information from users. HTML provides input fields,
+          labels, buttons and other form controls.
+        </p>
+
+        <pre><code>&lt;form action="#" method="post"&gt;
+  &lt;label for="name"&gt;Your Name&lt;/label&gt;
+
+  &lt;input
+    type="text"
+    id="name"
+    name="name"
+    required
+  &gt;
+
+  &lt;button type="submit"&gt;
+    Submit
+  &lt;/button&gt;
+&lt;/form&gt;</code></pre>
+
+        <p>
+          This example demonstrates the HTML structure only. A real form
+          needs an appropriate server or form service to process submissions.
+          Never collect sensitive information without proper security.
+        </p>
+      </section>
+
+      <section id="semantic">
+        <h2>10. Semantic HTML</h2>
+
+        <p>
+          Semantic elements describe the purpose of different page sections.
+          They make the document structure easier for people and assistive
+          technologies to understand.
+        </p>
+
+        <pre><code>&lt;header&gt;Website header&lt;/header&gt;
+
+&lt;nav&gt;Navigation links&lt;/nav&gt;
+
+&lt;main&gt;
+  &lt;article&gt;
+    &lt;h1&gt;Article title&lt;/h1&gt;
+    &lt;p&gt;Article content goes here.&lt;/p&gt;
+  &lt;/article&gt;
+&lt;/main&gt;
+
+&lt;footer&gt;Footer content&lt;/footer&gt;</code></pre>
+
+        <p>
+          Use these elements according to their meaning rather than
+          choosing them only for their appearance.
+        </p>
+      </section>
+
+      <section id="mistakes">
+        <h2>11. Common HTML Beginner Mistakes</h2>
+
+        <ul>
+          <li>Forgetting to close elements that require closing tags.</li>
+          <li>Using an incorrect image or file path.</li>
+          <li>Leaving important images without useful alt text.</li>
+          <li>Using headings only to change font size.</li>
+          <li>Forgetting the mobile viewport meta tag.</li>
+          <li>Using the same ID more than once on a page.</li>
+          <li>Publishing links that lead to missing pages.</li>
+          <li>Assuming that HTML alone can process a server-side form.</li>
+        </ul>
+
+        <div class="tip">
+          <strong>Tip:</strong> Test your page in the browser and check
+          that every link, image and important section works as expected.
+        </div>
+      </section>
+
+      <section id="practice">
+        <h2>12. Practice Project: Build Your First Webpage</h2>
+
+        <p>
+          Now use the concepts from this guide to create a simple personal
+          webpage. You can add your own content and improve the design later.
+        </p>
+
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport"
+        content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;My First Webpage&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+  &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+
+  &lt;p&gt;I am learning HTML.&lt;/p&gt;
+
+  &lt;h2&gt;My Interests&lt;/h2&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;Technology&lt;/li&gt;
+    &lt;li&gt;Coding&lt;/li&gt;
+    &lt;li&gt;Learning AI&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;a href="https://example.com/"&gt;
+    Example Link
+  &lt;/a&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+        <p>
+          Save this code as <code>index.html</code> in a separate practice
+          folder, then open it in a browser or use your editor's preview.
+          Do not overwrite your main TechWithAmit homepage.
+        </p>
+      </section>
+
+      <section id="faq">
+        <h2>13. Frequently Asked Questions</h2>
+
+        <h3>Is HTML easy for beginners?</h3>
+        <p>
+          HTML is a useful starting point because you can begin with
+          a few basic tags and gradually build more complex pages.
+        </p>
+
+        <h3>Can I learn HTML on a phone?</h3>
+        <p>
+          Yes. A code editor and a mobile browser can help you practise
+          HTML. A computer may be more convenient for larger projects,
+          but it is not required to begin learning.
+        </p>
+
+        <h3>Is HTML a programming language?</h3>
+        <p>
+          HTML is a markup language. It describes the structure and meaning
+          of webpage content rather than implementing general programming logic.
+        </p>
+
+        <h3>What should I learn after HTML?</h3>
+        <p>
+          Learn CSS next to style your pages, followed by JavaScript
+          to add interactive behaviour.
+        </p>
+
+        <h3>Where can I find official HTML documentation?</h3>
+        <p>
+          The MDN Web Docs provide tutorials, references and examples.
+          You can start with the official learning resource below.
+        </p>
+
+        <p>
+          <a class="resource"
+             href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content"
+             target="_blank"
+             rel="noopener noreferrer">
+            Read HTML Learning Resources on MDN
+          </a>
+        </p>
+      </section>
+
+      <section>
+        <h2>Conclusion</h2>
+
+        <p>
+          HTML is the foundation of webpage structure. Start by learning
+          headings, paragraphs, links, images and lists. Then practise
+          tables, forms and semantic elements by building small projects.
+        </p>
+
+        <p>
+          Keep exploring beginner-friendly technology guides on
+          <a href="index.html">TechWithAmit</a>.
+          You can also read our
+          <a href="chatgpt-guide.html">ChatGPT guide</a> and
+          <a href="ai-tools.html">AI tools article</a>.
+        </p>
+
+        <p>
+          Questions or suggestions?
+          Visit our <a href="contact.html">Contact page</a>.
+        </p>
+      </section>
+
+    </article>
+  </main>
+
+  <footer>
+    <p>© 2026 TechWithAmit. All rights reserved.</p>
+    <p>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="contact.html">Contact</a>
+    </p>
+  </footer>
+
+  <script>
+    function darkMode() {
+      document.body.classList.toggle("dark");
+
+      const button = document.getElementById("themeBtn");
+
+      if (document.body.classList.contains("dark")) {
+        button.textContent = "☀️ Toggle Light Mode";
+      } else {
+        button.textContent = "🌙 Toggle Dark Mode";
+      }
+    }
+  </script>
+
+</body> 
 </html>
+          
