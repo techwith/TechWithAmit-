@@ -1,69 +1,349 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Artificial Intelligence - TechWithAmit</title>
-  <link rel="stylesheet" href="style.css">
+
+  <title>Artificial Intelligence (AI): Complete Beginner's Guide | TechWithAmit</title>
+  <meta name="description" content="Learn what Artificial Intelligence is, how AI works, its real-world uses, benefits, limitations and how beginners can start learning AI.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://techwith.github.io/TechWithAmit/ai.html">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.8;
+      background: #f3f6fb;
+      color: #202938;
+      transition: 0.3s;
+    }
+
+    header {
+      background: #101827;
+      color: white;
+      text-align: center;
+      padding: 22px 15px;
+    }
+
+    header h1 {
+      font-size: 28px;
+    }
+
+    nav {
+      margin-top: 12px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
+    .btn {
+      border: none;
+      background: #1769aa;
+      color: white;
+      padding: 10px 15px;
+      margin-top: 12px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    main {
+      max-width: 850px;
+      margin: 25px auto;
+      padding: 25px;
+      background: white;
+      border-radius: 12px;
+    }
+
+    h2 {
+      color: #1769aa;
+      margin-top: 26px;
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+
+    h3 {
+      margin-top: 16px;
+    }
+
+    p {
+      margin: 12px 0;
+    }
+
+    ul, ol {
+      padding-left: 25px;
+      margin: 10px 0;
+    }
+
+    li {
+      margin: 7px 0;
+    }
+
+    .highlight {
+      background: #e8f3ff;
+      border-left: 4px solid #1769aa;
+      border-radius: 5px;
+      padding: 15px;
+      margin: 18px 0;
+    }
+
+    .related a {
+      color: #1769aa;
+      text-decoration: none;
+    }
+
+    footer {
+      background: #101827;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 25px;
+    }
+
+    body.dark {
+      background: #111827;
+      color: #e5e7eb;
+    }
+
+    body.dark main {
+      background: #1f2937;
+    }
+
+    body.dark h2,
+    body.dark .related a {
+      color: #7dd3fc;
+    }
+
+    body.dark .highlight {
+      background: #29384b;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 23px;
+      }
+
+      main {
+        margin: 12px;
+        padding: 18px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 4px 6px;
+      }
+    }
+  </style>
 </head>
-<body class="ai-page">
 
-  <header>
-    <div class="container">
-      <h1>TechWithAmit</h1>
-    </div>
-  </header>
+<body>
 
-  <section class="ai-hero hero">
-    <div class="ai-hero-inner">
-      <p class="eyebrow">Technology • Future • Innovation</p>
-      <h2>Artificial Intelligence</h2>
-      <p>AI duniya ki sabse tez badhne wali technology hai. Yeh machines ko samajhna, seekhna aur decision lena sikhati hai.</p>
-      <div class="ai-actions">
-        <a href="index.html" class="primary-btn">⬅ Back to Home</a>
-      </div>
-    </div>
-  </section>
+<header>
+  <h1>TechWithAmit</h1>
+  <p>Making Technology Easier for Everyone</p>
 
-  <main class="ai-content">
-    <section class="ai-grid">
-      <article class="ai-card card">
-        <h3>What is AI?</h3>
-        <p>
-          Artificial Intelligence (AI) ek aisi technology hai jo computers ko insaan ki tarah sochne,
-          samajhne aur decision lene me madad karti hai. Aaj AI ka use mobile phones, robots, cars,
-          hospitals, education aur business me ho raha hai.
-        </p>
-      </article>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="ai.html">AI</a>
+    <a href="android.html">Android</a>
+    <a href="coding.html">Coding</a>
+  </nav>
 
-      <article class="ai-card card">
-        <h3>AI ka use kaha hota hai?</h3>
-        <ul>
-          <li>Healthcare: disease detect karna aur diagnosis me help</li>
-          <li>Education: personalized learning aur smart tutoring</li>
-          <li>Business: automation, customer support aur data analysis</li>
-          <li>Transport: self-driving cars aur smart navigation</li>
-        </ul>
-      </article>
+  <button class="btn" onclick="darkMode()">🌙 Dark Mode</button>
+</header>
 
-      <article class="ai-card card">
-        <h3>AI kaise kaam karta hai?</h3>
-        <p>
-          AI data ko collect karke patterns ko samajhta hai. Phir us data ke basis par predictions,
-          recommendations aur automation perform karta hai. Machine Learning aur Deep Learning is process
-          ka important part hai.
-        </p>
-      </article>
-    </section>
+<main>
+  <h2>Artificial Intelligence (AI): Complete Beginner's Guide</h2>
 
-    <section class="ai-summary card">
-      <h3>Final Thought</h3>
-      <p>
-        AI sirf ek technology nahi, balki ek naya digital revolution hai. Agar sahi tarike se use kiya jaye,
-        toh yeh rozmarra ke kaam ko aur behtar, fast aur smart bana sakta hai.
-      </p>
-    </section>
-  </main>
+  <p>
+    Artificial Intelligence, commonly called AI, is a field of computer
+    science focused on creating systems that can perform tasks such as
+    understanding language, recognising images, finding patterns and
+    generating content.
+  </p>
+
+  <p>
+    AI is already used in search engines, translation apps, online
+    shopping recommendations, navigation systems and many other tools.
+    You do not need to be an expert to start understanding how it works.
+  </p>
+
+  <div class="highlight">
+    <strong>Important:</strong> AI can be useful, but it can also make
+    mistakes. Always verify important information instead of trusting
+    every answer automatically.
+  </div>
+
+  <h2>1. What Is Artificial Intelligence?</h2>
+
+  <p>
+    AI allows computers to perform certain tasks that normally require
+    human-like abilities, such as interpreting language or recognising
+    patterns. AI does not mean that a computer understands everything
+    the way a human does.
+  </p>
+
+  <h2>2. How Does AI Work?</h2>
+
+  <p>
+    Many AI systems are trained using examples and data. During training,
+    a model learns patterns that help it make predictions or produce
+    outputs. When you ask a question, an AI tool processes your input
+    and generates a response using what it learned and how it was designed.
+  </p>
+
+  <ol>
+    <li><strong>Data:</strong> Examples are collected for a particular task.</li>
+    <li><strong>Training:</strong> A model learns patterns from the data.</li>
+    <li><strong>Input:</strong> A user provides a question, image or other information.</li>
+    <li><strong>Output:</strong> The AI produces a prediction, answer or result.</li>
+    <li><strong>Review:</strong> A person checks whether the result is useful and accurate.</li>
+  </ol>
+
+  <h2>3. Common Types of AI Technology</h2>
+
+  <h3>Machine Learning</h3>
+  <p>
+    Machine learning helps computers learn patterns from data and use
+    those patterns to make predictions or decisions.
+  </p>
+
+  <h3>Natural Language Processing</h3>
+  <p>
+    Natural Language Processing (NLP) helps computers work with human
+    language, including text analysis, translation and chatbots.
+  </p>
+
+  <h3>Computer Vision</h3>
+  <p>
+    Computer vision helps systems analyse images and videos, for example
+    identifying objects in a photograph.
+  </p>
+
+  <h3>Generative AI</h3>
+  <p>
+    Generative AI can create new content such as text, images, audio or
+    code based on a user's instructions and the model's learned patterns.
+  </p>
+
+  <h2>4. Real-World Uses of AI</h2>
+
+  <ul>
+    <li><strong>Education:</strong> Explaining concepts and helping students practise.</li>
+    <li><strong>Healthcare:</strong> Supporting certain medical analysis tasks under professional oversight.</li>
+    <li><strong>Business:</strong> Summarising documents and automating repetitive tasks.</li>
+    <li><strong>Entertainment:</strong> Recommending videos, music and other content.</li>
+    <li><strong>Transport:</strong> Supporting route planning and traffic prediction.</li>
+    <li><strong>Software development:</strong> Assisting with code explanations, testing and debugging.</li>
+  </ul>
+
+  <h2>5. Benefits of Artificial Intelligence</h2>
+
+  <ul>
+    <li>Can help complete some tasks faster.</li>
+    <li>Can analyse large amounts of information.</li>
+    <li>Can support learning and creative work.</li>
+    <li>Can automate repetitive processes.</li>
+    <li>Can make certain digital tools easier to use.</li>
+  </ul>
+
+  <h2>6. Limitations and Risks of AI</h2>
+
+  <ul>
+    <li>AI can produce incorrect or misleading answers.</li>
+    <li>Its output can reflect problems or bias in its training data.</li>
+    <li>Some tools may require payment or an internet connection.</li>
+    <li>Sharing private information with AI tools can create privacy risks.</li>
+    <li>AI-generated work still needs human checking and judgement.</li>
+  </ul>
+
+  <div class="highlight">
+    <strong>Safety tip:</strong> Avoid entering passwords, banking details,
+    private documents or other sensitive information into AI tools unless
+    you understand how the service handles that data.
+  </div>
+
+  <h2>7. How Can Beginners Start Learning AI?</h2>
+
+  <ol>
+    <li>Learn basic computer and programming concepts.</li>
+    <li>Start learning Python if you want to explore machine learning.</li>
+    <li>Practise basic maths, especially graphs, statistics and algebra.</li>
+    <li>Explore beginner-friendly AI demonstrations and tutorials.</li>
+    <li>Build small projects and learn to test their results.</li>
+  </ol>
+
+  <p>
+    You can begin exploring AI on a mobile phone. As your projects become
+    more advanced, a computer or a cloud-based coding environment may be
+    helpful.
+  </p>
+
+  <h2>8. Is AI a Good Career Option?</h2>
+
+  <p>
+    AI-related work includes machine learning, data analysis, AI
+    engineering and software development. These fields can offer
+    opportunities, but they require ongoing learning, practical skills
+    and project experience. No course or technology guarantees a job.
+  </p>
+
+  <h2>Frequently Asked Questions</h2>
+
+  <h3>Is AI the same as a robot?</h3>
+  <p>
+    No. AI is a type of technology. A robot is a physical machine, and
+    some robots use AI while many other AI systems exist only as software.
+  </p>
+
+  <h3>Do I need to know coding to use AI tools?</h3>
+  <p>
+    No. Many AI tools work through simple text instructions. However,
+    programming is useful if you want to build AI applications yourself.
+  </p>
+
+  <h3>Can AI make mistakes?</h3>
+  <p>
+    Yes. AI systems can produce inaccurate information, so check important
+    facts using reliable sources.
+  </p>
+
+  <h2>Related Articles</h2>
+
+  <ul class="related">
+    <li><a href="ai-tools.html">Useful AI Tools Guide</a></li>
+    <li><a href="chatgpt-guide.html">ChatGPT Complete Guide</a></li>
+    <li><a href="coding.html">Coding for Beginners</a></li>
+    <li><a href="python-guide.html">Python Beginner's Guide</a></li>
+    <li><a href="cybersecurity.html">Cybersecurity Guide</a></li>
+    <li><a href="android.html">Android Guide</a></li>
+  </ul>
+
+  <p>
+    AI is a powerful area of technology, and the best way to understand
+    it is to keep learning, experimenting and checking results carefully.
+  </p>
+</main>
+
+<footer>
+  <p>© 2026 TechWithAmit | Making Technology Easier for Everyone</p>
+</footer>
+
+<script>
+  function darkMode() {
+    document.body.classList.toggle("dark");
+  }
+</script>
 
 </body>
-</html>
+  </html>
+
