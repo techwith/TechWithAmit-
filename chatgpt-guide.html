@@ -1,69 +1,634 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ChatGPT Complete Guide | TechWithAmit</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ChatGPT Complete Guide for Beginners (2026) | TechWithAmit</title>
+
+  <meta name="description" content="Learn how to use ChatGPT for studying, coding, writing and daily tasks. Explore beginner tips, prompt examples, limitations and safety advice.">
+
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="TechWithAmit">
+  <meta name="theme-color" content="#101828">
+
+  <link rel="canonical" href="https://techwith.github.io/TechWithAmit/chatgpt-guide.html">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="ChatGPT Complete Guide for Beginners">
+  <meta property="og:description" content="A simple guide to using ChatGPT for learning, coding, writing and productivity.">
+  <meta property="og:url" content="https://techwith.github.io/TechWithAmit/chatgpt-guide.html">
+  <meta property="og:site_name" content="TechWithAmit">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "ChatGPT Complete Guide for Beginners",
+    "description": "A beginner-friendly guide to using ChatGPT for study, coding, writing and productivity.",
+    "author": {
+      "@type": "Organization",
+      "name": "TechWithAmit"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "TechWithAmit"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://techwith.github.io/TechWithAmit/chatgpt-guide.html"
+    },
+    "datePublished": "2026-10-26",
+    "dateModified": "2026-10-26"
+  }
+  </script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.8;
+      background: #f5f7fb;
+      color: #202124;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    header {
+      background: #101828;
+      color: white;
+      padding: 24px 14px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 30px;
+    }
+
+    header p {
+      margin: 5px 0 0;
+    }
+
+    nav {
+      background: #172554;
+      padding: 12px 8px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      display: inline-block;
+      margin: 4px 9px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .controls {
+      text-align: center;
+      padding: 15px;
+    }
+
+    button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 11px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 18px auto;
+      padding: 26px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 3px 15px #0000000d;
+    }
+
+    h2, h3 {
+      color: #1d4ed8;
+      line-height: 1.4;
+    }
+
+    h1, h2, h3 {
+      scroll-margin-top: 15px;
+    }
+
+    a {
+      color: #2563eb;
+    }
+
+    .intro {
+      font-size: 18px;
+    }
+
+    .meta {
+      color: #64748b;
+      font-size: 14px;
+    }
+
+    .toc, .tip {
+      padding: 17px;
+      border-radius: 9px;
+      background: #eef4ff;
+      margin: 20px 0;
+    }
+
+    .toc li {
+      margin: 5px 0;
+    }
+
+    .example {
+      background: #f3f4f6;
+      border-left: 4px solid #2563eb;
+      border-radius: 5px;
+      padding: 14px;
+      margin: 15px 0;
+      overflow-wrap: anywhere;
+    }
+
+    .tool-link {
+      display: inline-block;
+      background: #2563eb;
+      color: white;
+      padding: 9px 14px;
+      border-radius: 7px;
+      text-decoration: none;
+    }
+
+    .tool-link:hover {
+      background: #1d4ed8;
+    }
+
+    footer {
+      background: #101828;
+      color: white;
+      text-align: center;
+      padding: 22px 12px;
+      margin-top: 25px;
+    }
+
+    footer a {
+      color: #bfdbfe;
+    }
+
+    body.dark {
+      background: #111827;
+      color: #e5e7eb;
+    }
+
+    body.dark main {
+      background: #1f2937;
+    }
+
+    body.dark h2,
+    body.dark h3 {
+      color: #93c5fd;
+    }
+
+    body.dark a {
+      color: #93c5fd;
+    }
+
+    body.dark .toc,
+    body.dark .tip {
+      background: #273449;
+    }
+
+    body.dark .example {
+      background: #111827;
+      border-left-color: #60a5fa;
+    }
+
+    body.dark .meta {
+      color: #cbd5e1;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 25px;
+      }
+
+      main {
+        margin: 10px;
+        padding: 17px;
+      }
+
+      .intro {
+        font-size: 16px;
+      }
+
+      nav a {
+        margin: 5px 6px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-<div class="container">
-<h1>TechWithAmit</h1>
-</div>
-</header>
+  <header>
+    <h1>TechWithAmit</h1>
+    <p>Making Technology Easier for Everyone</p>
+  </header>
 
-<section class="hero">
-<h2>🤖 ChatGPT Complete Guide</h2>
+  <nav aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="index.html#news">News</a>
+    <a href="index.html#technology">Technology</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-<img src="images/ai.png" alt="ChatGPT" width="300">
+  <div class="controls">
+    <button id="themeBtn" type="button" onclick="darkMode()">
+      🌙 Toggle Dark Mode
+    </button>
+  </div>
 
-<p><strong>Published by:</strong> Amit</p>
-<div class="author-box">
+  <main>
+    <article>
+      <h2>ChatGPT Complete Guide for Beginners (2026)</h2>
 
-<img src="images/amit.png" width="80">
+      <p class="meta">
+        By TechWithAmit | Published: October 26, 2026
+      </p>
 
-<div>
-<h3>✍️ Amit</h3>
-<p>
-Founder of TechWithAmit. Sharing AI, Coding, Android and Technology updates.
-</p>
-</div>
+      <p class="intro">
+        ChatGPT is an AI assistant that can help you understand topics,
+        write content, learn programming, brainstorm ideas and complete
+        many everyday tasks. You do not need to be a technology expert
+        to get started.
+      </p>
 
-</div>
+      <p>
+        In this beginner-friendly guide, you will learn what ChatGPT is,
+        how to use it, how to write better prompts and what precautions
+        to take when using AI.
+      </p>
 
-<p>
-ChatGPT is an AI chatbot developed by OpenAI. It can answer questions, help with coding, writing, studying, brainstorming ideas, and much more.
-</p>
+      <p>
+        If you are exploring more AI websites, read our
+        <a href="ai-tools.html">guide to 10 useful AI tools</a>.
+      </p>
 
-<p>
-Students use ChatGPT to understand difficult topics, programmers use it to write and debug code, and creators use it to generate content. When used wisely, it can save time and improve productivity.
-</p>
+      <div class="toc">
+        <h3>Table of Contents</h3>
+        <ol>
+          <li><a href="#what-is-chatgpt">What Is ChatGPT?</a></li>
+          <li><a href="#how-to-use">How to Use ChatGPT</a></li>
+          <li><a href="#students">ChatGPT for Students</a></li>
+          <li><a href="#coding">ChatGPT for Coding</a></li>
+          <li><a href="#prompts">How to Write Better Prompts</a></li>
+          <li><a href="#examples">Useful Prompt Examples</a></li>
+          <li><a href="#limitations">Limitations of ChatGPT</a></li>
+          <li><a href="#safety">Privacy and Safety Tips</a></li>
+          <li><a href="#faq">Frequently Asked Questions</a></li>
+        </ol>
+      </div>
 
-<p>
-Even though ChatGPT is powerful, it is always a good idea to verify important information from reliable sources, especially for studies, health, or legal topics.
-</p>
+      <section id="what-is-chatgpt">
+        <h2>1. What Is ChatGPT?</h2>
 
-<br>
-<br>
-<div class="related">
+        <p>
+          ChatGPT is an AI assistant developed by OpenAI. You can type
+          questions or instructions in everyday language and receive
+          responses that help you explore a topic or work on a task.
+        </p>
 
-<h3>🔗 Related Articles</h3>
+        <p>Depending on the available features, you can use ChatGPT to:</p>
 
-<a href="ai-education.html">AI in Education</a><br>
-<a href="future-ai.html">Future of Artificial Intelligence</a>
+        <ul>
+          <li>Understand difficult subjects in simple words.</li>
+          <li>Draft emails, articles and social media captions.</li>
+          <li>Learn HTML, CSS, JavaScript, C++ and other programming topics.</li>
+          <li>Generate ideas for projects and content.</li>
+          <li>Summarise information and organise your study notes.</li>
+        </ul>
 
-</div>
+        <p>
+          ChatGPT can make learning easier, but its answers should not
+          automatically be treated as correct. Important information
+          needs to be checked.
+        </p>
 
-<br>
+        <p>
+          <a class="tool-link"
+             href="https://chatgpt.com/"
+             target="_blank"
+             rel="noopener noreferrer">
+            Open Official ChatGPT Website
+          </a>
+        </p>
+      </section>
 
-<a href="index.html">
-<button>⬅ Back to Home</button>
-</a>
+      <section id="how-to-use">
+        <h2>2. How to Use ChatGPT</h2>
 
-</section>
+        <p>Follow these basic steps to get started:</p>
+
+        <ol>
+          <li>Open the official website at chatgpt.com or the official app.</li>
+          <li>Sign in or create an account if required.</li>
+          <li>Type your question or task into the message box.</li>
+          <li>Read the response and ask follow-up questions if needed.</li>
+          <li>Check important facts before using the answer.</li>
+        </ol>
+
+        <div class="tip">
+          <strong>Beginner tip:</strong> If an explanation is difficult,
+          ask ChatGPT to explain it using simple language and examples.
+        </div>
+      </section>
+
+      <section id="students">
+        <h2>3. How Students Can Use ChatGPT</h2>
+
+        <p>
+          Students can use ChatGPT as a study assistant. It can help
+          explain concepts, create revision questions and break large
+          topics into smaller steps.
+        </p>
+
+        <h3>Understand difficult topics</h3>
+        <p>
+          Ask for a simple explanation first. Once you understand the
+          basics, request a more detailed explanation with examples.
+        </p>
+
+        <div class="example">
+          <strong>Example prompt:</strong>
+          Explain the water analysis topic in simple Hinglish. Start with
+          the basic definitions, then explain important terms with examples.
+        </div>
+
+        <h3>Prepare revision notes</h3>
+        <p>
+          You can ask for short notes, definitions and practice questions
+          based on your syllabus. Always compare the notes with your
+          teacher's material and prescribed syllabus.
+        </p>
+
+        <div class="example">
+          <strong>Example prompt:</strong>
+          Help me make revision notes on [topic]. Include definitions,
+          important concepts and five practice questions. Keep the
+          language simple.
+        </div>
+
+        <h3>Practise before an exam</h3>
+        <p>
+          Ask ChatGPT to quiz you one question at a time. Try answering
+          yourself before looking at an explanation.
+        </p>
+      </section>
+
+      <section id="coding">
+        <h2>4. How to Use ChatGPT for Coding</h2>
+
+        <p>
+          ChatGPT can help beginners learn programming by explaining
+          code, suggesting examples and helping investigate errors.
+          It is useful for learning HTML, CSS, JavaScript, C++ and more.
+        </p>
+
+        <h3>Learn one concept at a time</h3>
+        <p>
+          Instead of asking for a huge project immediately, begin with
+          a small program. Understand each line before adding more features.
+        </p>
+
+        <div class="example">
+          <strong>Example prompt:</strong>
+          Teach me C++ from the beginning. Explain variables with a
+          simple program, then give me one practice exercise.
+        </div>
+
+        <h3>Understand coding errors</h3>
+        <p>
+          If your code fails, share the relevant code and exact error
+          message. Ask for the cause of the error and a corrected example.
+          Do not share passwords, API keys or private account details.
+        </p>
+
+        <div class="example">
+          <strong>Example prompt:</strong>
+          Explain why this code gives an error. Identify the problem,
+          show the corrected code and explain the change in simple words.
+        </div>
+
+        <p>
+          You can also explore our
+          <a href="index.html#technology">technology articles</a>
+          for more beginner-friendly learning.
+        </p>
+      </section>
+
+      <section id="prompts">
+        <h2>5. How to Write Better ChatGPT Prompts</h2>
+
+        <p>
+          A prompt is the question or instruction you give to an AI.
+          Clear instructions usually make it easier to get a useful response.
+        </p>
+
+        <p>A good prompt often includes these four things:</p>
+
+        <ul>
+          <li><strong>Goal:</strong> What do you want to achieve?</li>
+          <li><strong>Context:</strong> What background should the AI know?</li>
+          <li><strong>Format:</strong> Do you want steps, notes, a table or code?</li>
+          <li><strong>Level:</strong> Should the explanation be beginner-friendly?</li>
+        </ul>
+
+        <h3>Weak prompt</h3>
+        <div class="example">
+          Explain C++.
+        </div>
+
+        <h3>Better prompt</h3>
+        <div class="example">
+          I am a beginner learning C++. Explain variables in simple
+          language, show a short program, explain each line and give
+          me one practice question.
+        </div>
+
+        <p>
+          If the first response is not helpful, you can clarify your
+          requirements rather than starting again.
+        </p>
+      </section>
+
+      <section id="examples">
+        <h2>6. Useful ChatGPT Prompt Examples</h2>
+
+        <h3>For learning English</h3>
+        <div class="example">
+          Help me improve my basic English. Teach me five useful words
+          with Hindi meanings and simple example sentences.
+        </div>
+
+        <h3>For content creation</h3>
+        <div class="example">
+          Suggest five original Instagram Reel ideas about useful AI
+          websites. Give each idea a hook, a short outline and a caption.
+        </div>
+
+        <h3>For website development</h3>
+        <div class="example">
+          Help me improve my HTML article page for mobile users.
+          Explain the changes and provide code that I can test before publishing.
+        </div>
+
+        <h3>For research</h3>
+        <div class="example">
+          Explain this topic using reliable sources. Separate confirmed
+          facts from uncertain claims and provide links I can check.
+        </div>
+
+        <h3>For time management</h3>
+        <div class="example">
+          Create a realistic one-hour daily study plan for a beginner.
+          Include short breaks and clear tasks.
+        </div>
+      </section>
+
+      <section id="limitations">
+        <h2>7. Limitations of ChatGPT</h2>
+
+        <p>
+          ChatGPT is useful, but it is not perfect. It may misunderstand
+          a question, give outdated information or produce an answer that
+          sounds confident but is incorrect.
+        </p>
+
+        <ul>
+          <li>It can make factual mistakes.</li>
+          <li>Some answers may need current sources or verification.</li>
+          <li>Code may contain errors or security problems.</li>
+          <li>Features and usage limits can vary by account and plan.</li>
+          <li>It cannot replace your own understanding or professional advice.</li>
+        </ul>
+
+        <p>
+          For current events, official rules, fees or technical
+          documentation, check trustworthy and up-to-date sources.
+        </p>
+      </section>
+
+      <section id="safety">
+        <h2>8. Privacy and Safety Tips</h2>
+
+        <ul>
+          <li>Never share passwords, verification codes or banking details.</li>
+          <li>Avoid uploading confidential documents or private information.</li>
+          <li>Check important answers using reliable sources.</li>
+          <li>Review generated content before publishing it.</li>
+          <li>Follow your school's or college's rules for AI-assisted work.</li>
+          <li>Read the official privacy information to understand how your data is handled.</li>
+        </ul>
+
+        <div class="tip">
+          <strong>Remember:</strong> Use AI to support your learning
+          and creativity, not to replace your judgement.
+        </div>
+      </section>
+
+      <section id="faq">
+        <h2>9. Frequently Asked Questions</h2>
+
+        <h3>Is ChatGPT free?</h3>
+        <p>
+          ChatGPT offers free access in addition to paid plans.
+          Available features and usage limits may vary over time.
+          Check the official website for current details.
+        </p>
+
+        <h3>Can beginners use ChatGPT?</h3>
+        <p>
+          Yes. You can ask questions in everyday language and request
+          explanations that match your experience level.
+        </p>
+
+        <h3>Can ChatGPT help with coding?</h3>
+        <p>
+          Yes. It can explain programming concepts, provide examples
+          and help investigate errors. Test and review code before using it.
+        </p>
+
+        <h3>Can ChatGPT answers be wrong?</h3>
+        <p>
+          Yes. Verify important facts, especially information about
+          health, money, law, safety and current events.
+        </p>
+
+        <h3>Does ChatGPT replace learning?</h3>
+        <p>
+          No. It is most useful when you actively practise, ask questions
+          and develop your own understanding.
+        </p>
+      </section>
+
+      <section>
+        <h2>Conclusion</h2>
+
+        <p>
+          ChatGPT can help beginners with learning, coding, writing and
+          content creation. The best results come from clear prompts,
+          regular practice and checking important information.
+        </p>
+
+        <p>
+          Explore more guides on
+          <a href="index.html">TechWithAmit</a> and discover additional
+          tools in our <a href="ai-tools.html">AI tools guide</a>.
+        </p>
+
+        <p>
+          Have a question or suggestion?
+          Visit our <a href="contact.html">Contact page</a>.
+        </p>
+      </section>
+
+    </article>
+  </main>
+
+  <footer>
+    <p>© 2026 TechWithAmit. All rights reserved.</p>
+    <p>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="contact.html">Contact</a>
+    </p>
+  </footer>
+
+  <script>
+    function darkMode() {
+      document.body.classList.toggle("dark");
+
+      const button = document.getElementById("themeBtn");
+
+      if (document.body.classList.contains("dark")) {
+        button.textContent = "☀️ Toggle Light Mode";
+      } else {
+        button.textContent = "🌙 Toggle Dark Mode";
+      }
+    }
+  </script>
 
 </body>
 </html>
