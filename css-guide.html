@@ -1,69 +1,316 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>CSS Complete Guide | TechWithAmit</title>
+  <title>CSS Tutorial for Beginners in Hindi | TechWithAmit</title>
+  <meta name="description" content="Learn CSS from basics in Hindi. Understand CSS syntax, colors, fonts, backgrounds, margins, padding and responsive web design with examples.">
 
-<link rel="stylesheet" href="style.css">
+  <link rel="canonical" href="https://techwith.github.io/TechWithAmit/css-guide.html">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.8;
+      background: #f5f7fb;
+      color: #222;
+    }
+
+    header {
+      background: #172554;
+      color: white;
+      padding: 22px 16px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav {
+      background: #1e3a8a;
+      padding: 12px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    main {
+      max-width: 850px;
+      margin: 24px auto;
+      padding: 24px;
+      background: white;
+      border-radius: 12px;
+    }
+
+    h2 {
+      color: #1d4ed8;
+      margin-top: 28px;
+    }
+
+    pre {
+      background: #111827;
+      color: #d1fae5;
+      padding: 16px;
+      border-radius: 8px;
+      overflow-x: auto;
+      white-space: pre-wrap;
+    }
+
+    .demo {
+      background: #dbeafe;
+      color: #1e40af;
+      border: 2px solid #60a5fa;
+      padding: 16px;
+      margin: 16px 0;
+      border-radius: 8px;
+    }
+
+    .note {
+      background: #eff6ff;
+      padding: 14px;
+      border-left: 4px solid #2563eb;
+    }
+
+    footer {
+      text-align: center;
+      padding: 22px;
+      background: #172554;
+      color: white;
+    }
+
+    body.dark {
+      background: #111827;
+      color: #e5e7eb;
+    }
+
+    body.dark main {
+      background: #1f2937;
+    }
+
+    body.dark h2 {
+      color: #93c5fd;
+    }
+
+    body.dark .note,
+    body.dark .demo {
+      background: #26364d;
+      color: #e5e7eb;
+    }
+
+    a {
+      color: #2563eb;
+    }
+
+    footer a {
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        margin: 12px;
+        padding: 16px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px;
+      }
+    }
+  </style>
 </head>
 
 <body>
+  <header>
+    <h1>TechWithAmit</h1>
+    <p>Making Technology Easier for Everyone</p>
+  </header>
 
-<header>
-<div class="container">
-<h1>TechWithAmit</h1>
-</div>
-</header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="ai-tools.html">AI Tools</a>
+    <a href="chatgpt-guide.html">ChatGPT Guide</a>
+    <a href="html-guide.html">HTML Guide</a>
+    <a href="about.html">About</a>
+  </nav>
 
+  <main>
+    <article>
+      <h1>CSS Tutorial for Beginners: Learn CSS from Basics</h1>
 
-<section class="hero">
+      <p>
+        CSS ka full form Cascading Style Sheets hai.
+        CSS ka use website ko attractive banane ke liye hota hai.
+        HTML website ka structure banata hai, jabki CSS uska design
+        improve karta hai.
+      </p>
 
-<h2>🎨 CSS Complete Guide for Beginners</h2>
+      <h2>1. CSS Kya Hai?</h2>
+      <p>
+        CSS se hum website ke colors, fonts, spacing, backgrounds,
+        borders aur layout ko control kar sakte hain.
+      </p>
 
-<img src="images/coding.png" alt="CSS Coding" width="300">
+      <div class="demo">
+        Ye ek CSS-styled example box hai.
+      </div>
 
-<p><strong>Published:</strong> 14 July 2026</p>
-<p><strong>Author:</strong> Amit</p>
+      <h2>2. CSS Syntax</h2>
+      <p>CSS rule mein selector, property aur value hoti hai.</p>
 
+      <pre><code>p {
+  color: blue;
+  font-size: 18px;
+}</code></pre>
 
-<p>
-CSS (Cascading Style Sheets) is used to design and style websites. It controls colors, fonts, layouts, animations and the overall look of web pages.
-</p>
+      <ul>
+        <li><strong>p:</strong> HTML paragraph ko select karta hai.</li>
+        <li><strong>color:</strong> Text ka color set karta hai.</li>
+        <li><strong>font-size:</strong> Text ka size set karta hai.</li>
+      </ul>
 
-<p>
-With CSS, developers can create beautiful websites that work on mobile phones, tablets and computers.
-</p>
+      <h2>3. HTML Mein CSS Kaise Add Karein?</h2>
 
-<p>
-Learning CSS after HTML is an important step for anyone who wants to become a web developer.
-</p>
+      <p><strong>Inline CSS:</strong> HTML element ke andar style likhte hain.</p>
 
+      <pre><code>&lt;p style="color: red;"&gt;Hello World&lt;/p&gt;</code></pre>
 
-<h3>Basic CSS Example:</h3>
+      <p><strong>Internal CSS:</strong> HTML file ke head section mein style tag use hota hai.</p>
 
-<pre>
-body {
-  background: black;
-  color: white;
+      <pre><code>&lt;style&gt;
+  h1 {
+    color: green;
+  }
+&lt;/style&gt;</code></pre>
+
+      <p><strong>External CSS:</strong> Alag CSS file banakar HTML se connect karte hain.</p>
+
+      <pre><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
+
+      <p>
+        Bade projects mein external CSS file use karna convenient hota hai.
+      </p>
+
+      <h2>4. CSS Colors and Background</h2>
+
+      <pre><code>body {
+  background-color: lightgray;
 }
 
 h1 {
-  text-align: center;
-}
-</pre>
+  color: navy;
+}</code></pre>
 
+      <p>
+        Colors ke liye color names, HEX values aur RGB values use kar sakte hain.
+      </p>
 
-<br>
+      <h2>5. Margin and Padding</h2>
 
-<a href="index.html">
-<button>⬅ Back to Home</button>
-</a>
+      <ul>
+        <li><strong>Margin:</strong> Element ke bahar ki space.</li>
+        <li><strong>Padding:</strong> Element ke content aur border ke beech ki space.</li>
+        <li><strong>Border:</strong> Element ke around line.</li>
+      </ul>
 
-</section>
+      <pre><code>.box {
+  margin: 20px;
+  padding: 15px;
+  border: 2px solid black;
+}</code></pre>
 
+      <h2>6. CSS Fonts</h2>
 
+      <pre><code>p {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}</code></pre>
+
+      <h2>7. Responsive Website Kya Hai?</h2>
+
+      <p>
+        Responsive website mobile, tablet aur computer ki screen ke
+        according apna layout adjust karti hai.
+      </p>
+
+      <pre><code>@media (max-width: 600px) {
+  h1 {
+    font-size: 24px;
+  }
+}</code></pre>
+
+      <h2>8. CSS Seekhne Ke Baad Kya Karein?</h2>
+
+      <ol>
+        <li>HTML basics practice karein.</li>
+        <li>CSS selectors aur box model samjhein.</li>
+        <li>Flexbox aur CSS Grid seekhein.</li>
+        <li>Ek responsive personal website banayein.</li>
+        <li>JavaScript basics seekhna shuru karein.</li>
+      </ol>
+
+      <div class="note">
+        <strong>Beginner Tip:</strong>
+        Har example ko apne code editor mein try karein.
+        Sirf code padhne ke bajay khud practice karne se concepts
+        achhe se samajh aate hain.
+      </div>
+
+      <h2>Useful Resources</h2>
+      <ul>
+        <li>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+             target="_blank" rel="noopener noreferrer">
+            MDN CSS Documentation
+          </a>
+        </li>
+        <li>
+          <a href="https://www.w3schools.com/css/"
+             target="_blank" rel="noopener noreferrer">
+            W3Schools CSS Tutorial
+          </a>
+        </li>
+      </ul>
+
+      <h2>Related Articles</h2>
+      <ul>
+        <li><a href="html-guide.html">HTML Tutorial for Beginners</a></li>
+        <li><a href="ai-tools.html">Best AI Tools Guide</a></li>
+        <li><a href="chatgpt-guide.html">ChatGPT Complete Guide</a></li>
+      </ul>
+
+      <p>
+        <a href="index.html">← Back to TechWithAmit Home</a>
+      </p>
+    </article>
+  </main>
+
+  <footer>
+    <p>© 2026 TechWithAmit. All rights reserved.</p>
+    <p>
+      <a href="privacy.html">Privacy Policy</a> |
+      <a href="disclaimer.html">Disclaimer</a> |
+      <a href="contact.html">Contact</a>
+    </p>
+    <button onclick="darkMode()">Toggle Dark Mode</button>
+  </footer>
+
+  <script>
+    function darkMode() {
+      document.body.classList.toggle("dark");
+    }
+  </script>
 </body>
 </html>
